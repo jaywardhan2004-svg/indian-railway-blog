@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Railway Blog - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery-container img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Gallery</h1>
+    <p>Explore the beautiful trains and stations of Indian Railways.</p>
+
+    <div class="gallery-container">
+      <img src="Train 3.jpg" alt="Train 1">
+      <img src="Train 4.jpg" alt="Train 2">
+      <img src="station 1.jpg" alt="Station 1">
+      <img src="station 2.jpg" alt="Station 2">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Indian Railway Blog</p>
+  </footer>
+</body>
+</html>
